@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.MainPictureBoder{
+    border-radius: 5px;
+    border-color: red;
+}
+
+#scroll {
+    background-color: #333; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: -50px; /* Hide the navbar 50 px outside of the top view */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+.video-bg{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+
+.video-bg video{
+    width: auto;
+    height: auto;
+}
+
+.bg-whitesmoke{
+    background-color: whitesmoke;
+}
+
+.fontPrompt{
+    font-family: 'Prompt', sans-serif;
+}
+
+.bg-img{
+    z-index: -100;
+    background-repeat: none;
+    width: 100%;
+    height: 400px;
+}
+
+.bg-img img{
+    width: 100%;
+    height: 1000px;
+}
+
+.bg-img .left img{
+    margin-left: 1rem;
+}
+
+.fontPrompt h1{
+    font-size: 50px;
+}
+
+.fontPrompt h3{
+    font-size: 40px;
+}
+
+.fontChonburi{
+    font-family: 'Chonburi', cursive;
+}
+
+.Behind{
+    z-index: -100;
+}
+
+.Front{
+    z-index: 0;
+}
+
+.LeftHeader{
+    position: absolute;
+    margin-top: 10rem;
+    margin-left: 5rem;
+}
+
+.RightHeader{
+    position: absolute;
+    top: 15rem;
+    right: 5rem;
+    text-align: right;
+}
+
+.paragraphLeftBanner{
+    border-left: 10px solid pink;
+    width: 500px;
+    padding-left: 5px;
+}
+
+.paragraphRightBanner{
+    border-right: 10px solid pink;
+    width: 500px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.paragraph{
+    font-size: 20px;
+}
+
+.paragraph p{
+    color:;
+}
+
+.TopImage{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    align-content: center;
+}
+
+.bgThemecolor{
+    background-color: rgb(41, 48, 54);
+}
+/*rgb(47, 54, 85);*/
+.sizeM{
+    border-radius: 0px;
+    transition: 0.5s;
+    border: 5px solid rgb(47, 54, 85);
+    width: 410px;
+    height: 560px;
+    margin-top: 5rem;
+    float: initial;
+    overflow: hidden;
+}
+
+.sizeM img{
+    border: none;
+    margin-top: 0px;
+    overflow: hidden;
+}
+
+.sizeM:hover{
+    border-radius: 50px;
+    width: 1000px;
+    height: 560px;
+    background-color: rgb(47, 54, 85);
+    visibility: visible;
+}
+
+.sizeM:hover img{
+    float: right;
+}
+
+.sizeM p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 550px;
+    border: 0px solid red;
+    color: wheat;
+    visibility: hidden;
+    transition: 0s;
+    font-size: 30px;
+    opacity: 0;
+}
+
+.sizeM:hover p{
+    
+    opacity: 1;
+    text-align: center;
+    visibility: visible;
+}
+
+.btn-link-white a{
+    text-decoration: none;
+}
+
+.btn-link-white a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.product-img-slide-box{
+    width: 80%;
+    height: 700px;
+}
+
+.webbox{
+    position: absolute;
+    border: 5px solid whitesmoke;
+    border-radius: 20px;
+    max-width: 720px;
+    max-height: 480px;
+    overflow: hidden;
+    top: 8rem;
+    right: 6rem;
+}
+
+.webbox img{
+    width: auto;
+    height: auto;
+}
+
+x-model {
+    animation: 5s spin linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotateY(1turn);
+    }
+}
+
+.modelOptions{
+    border: 8px solid rgb(255, 212, 131);
+    border-radius: 10px;
+    width: 650px;
+    height: 500px;
+    align-items: center;
+    margin-top: 40rem;
+    margin-left: 58rem;
+    overflow: hidden;
+}
+
+.footerProductWeb{
+    height: 100px;
+}
