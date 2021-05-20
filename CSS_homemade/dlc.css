@@ -218,11 +218,11 @@ x-model {
 .modelOptions{
     border: 8px solid rgb(255, 212, 131);
     border-radius: 10px;
-    width: 650px;
-    height: 500px;
+    width: 1500px;
+    height: 900px;
     align-items: center;
-    margin-top: 40rem;
-    margin-left: 58rem;
+    margin-top: 34rem;
+    margin-left: 5rem;
     overflow: hidden;
 }
 
