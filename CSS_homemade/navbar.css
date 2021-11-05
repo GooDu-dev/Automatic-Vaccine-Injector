@@ -181,7 +181,7 @@ nav .link-page .link.active a::after, nav .link-page .link:hover a::after{
         left: unset;
         top: unset;
         transform: translate(0, 0);
-        font-size: 7vw;
+        font-size: 5.5vw;
         display: initial;
     }
     nav .link-page{
