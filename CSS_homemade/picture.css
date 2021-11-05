@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('../Photos/stem04.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;    
+    font-family: 'Itim', cursive;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.content .paragraph{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 15vw;
+}
+.content .paragraph.right{
+    flex-direction: row;
+}
+.content .paragraph.col{
+    flex-direction: column-reverse;
+}
+.content .paragraph .text{
+    width: 40%;
+    background-color: wheat;
+    padding: 2vw;
+}
+.content .paragraph.col .text{
+    width: 80%;
+    margin: 5vw 0;
+}
+.content .paragraph .text h1{
+    font-size: 3vw;
+    padding: 0 2vw;
+}
+.content .paragraph.right .text h1{
+    text-align: start;
+    border-left: .5vw solid black;
+}
+.content .paragraph.col .text h1{
+    text-align: center;
+    border-bottom: 5px solid black;
+}
+.content .paragraph .text p{
+    font-size: 2vw;
+    padding: 2vw 0;
+    text-align: center;
+}
+.content .paragraph .image{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.content .paragraph.col .image{
+    width: 100%;
+}
+.content .paragraph .image .img, .content .paragraph .image .img2, .content .paragraph .image .img3{
+    width: 60%;
+}
+.content .paragraph .image .img:nth-child(n){
+    display: none;
+}
+.content .paragraph .image .img:nth-child(1){
+    display: initial;
+}
+
+
+@media only screen and (max-width: 1000px){
+    body{
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-color: #353a40;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .content .paragraph{
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 15vw;
+    }
+    .content .paragraph.right{
+        flex-direction: column-reverse;
+    }
+    .content .paragraph.col{
+        flex-direction: column-reverse;
+    }
+    .content .paragraph .text{
+        width: 40%;
+        background-color: wheat;
+        padding: 2vw;
+    }
+    .content .paragraph.right .text{
+        width: 80%;
+        margin: 5vw 0;
+    }
+    .content .paragraph.col .text{
+        width: 80%;
+        margin: 5vw 0;
+    }
+    .content .paragraph .text h1{
+        font-size: 6vw;
+        padding: 0 2vw;
+    }
+    .content .paragraph.right .text h1{
+        text-align: center;
+        border-left: .5vw solid black;
+    }
+    .content .paragraph.col .text h1{
+        text-align: center;
+        border-bottom: 5px solid black;
+    }
+    .content .paragraph .text p{
+        font-size: 4vw;
+        padding: 2vw 0;
+        text-align: center;
+    }
+    .content .paragraph .image{
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .content .paragraph.col .image, .content .paragraph.right .image{
+        width: 100%;
+    }
+    .content .paragraph .image .img, .content .paragraph .image .img2, .content .paragraph .image .img3{
+        width: 60%;
+    }
+    .content .paragraph .image .img:nth-child(n){
+        display: none;
+    }
+    .content .paragraph .image .img:nth-child(1){
+        display: initial;
+    }
+}

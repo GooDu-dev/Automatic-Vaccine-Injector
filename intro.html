@@ -4,59 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS_homemade/dlc.css">
-    <script src="js/bootstrap.js"></script>
-    <script src="JS_homemade/Js.js"></script>
+    <link rel="stylesheet" href="./CSS_homemade/intro.css">
+    <link rel="stylesheet" href="./CSS_homemade/navbar.css">
     <title>Intro | STEM04</title>
 </head>
 <body>
-    <!--Video Background-->
-    <div  class="video-bg modal-fullscreen container-fluid">
-        <video loop muted autoplay src="Photos/Vaccine_Bg.mp4" ></video>
-    </div>
 
     <!--Navbar-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
-    <!--Content-->
-    <div class="container-fluid">
-        <!--Brand-->
-        <a href="intro.html" class="navbar-brand "><img width="80" height="50" src="./Photos/stem04.png" alt=""></a>
-        <!--Welcome-->
-        <div class="navbar-nav topnav-centered">
-            <ul class=" navbar-nav">
-                <li class="nav-item"><a class="nav-link active" href="#">--Welcome--</a></li>
-            </ul>
-        </div>
-        <!--Menu-->
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggle">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
-            <ul class="navbar-nav">
-                <br><li class="nav-item"><a class="nav-link active" href="intro.html">Welcome</a></li>
-                <li class="nav-item"><a class="nav-link" href="Products.html">Innovation</a></li>
-                <li class="nav-item"><a class="nav-link" href="Picture.html">Pictures</a></li>
-                <li class="nav-item"><a class="nav-link" href="Reserch.html">Reserch</a></li>
-                <li class="nav-item"><a class="nav-link " href="AboutUs.html">About Us</a></li>
-            </ul>
-        </div>
-    </div>
+    <img id="toggle" onclick="toggleNavbar()" src="./Photos/setting-hamburger-handamde.png" alt="" class="toggle">
+    <nav id="nav">
+        <img src="./Photos/stem04.png" alt="" class="logo">
+        <h1 class="page">--Welcome--</h1>
+        <ul class="link-page">
+            <li class="link active"><a href="./intro.html">Welcome</a></li>
+            <li class="link"><a href="./Products.html">Innovation</a></li>
+            <li class="link"><a href="./Picture.html">Pictures</a></li>
+            <li class="link"><a href="./Reserch.html">Researches</a></li>
+            <li class="link"><a href="./AboutUs.html">About Us</a></li>
+        </ul>
     </nav>
 
-        <!--Header-->
-        <div class="LeftHeader">
-            <!--Product's Name-->
-            <h1 class="fontPrompt">Automatic Vaccine Injection</h1>
-            <h1 class="fontPrompt">เครื่องฉีดวัคซีนอัตโนมัติ</h1>
-            <!--Product Details-->
-            <div class="paragraphLeftBanner paragraph">
+    <div id="open" class="header-container">
+        <div class="text">
+            <div class="header">
+                <h1 class="english">Automatic Vaccine Injection</h1>
+                <h1 class="thai">เครื่องฉีดวัคซีนอัตโนมัติ</h1>
+            </div>
+            <div class="details">
                 <p>เป็นแนวคิดนวัตกรรมที่นำมาแก้ไขปัญหาด้านการฉีดวัคซีนชนิดต่างๆ เพื่อเป็นการบรรเทางานของบุคลากรทางการ เเพทย์ และช่วยเหลือให้ประชาชนสามารถเข้าถึงการฉีดวัคซีนได้เร็วยิ่งขึ้นโดยมีค่าใช้จ่ายที่น้อยลง
                 </p>
             </div>
-            <div>
-                <button type="button" class="btn btn-outline-primary btn-link-white"><a href="Products.html">Learn more</a></button>
-            </div>
+            <button><a href="./Products.html">Learn More</a></button>
         </div>
+        <video autoplay loop autoplay muted src="./Photos/Vaccine_Bg.mp4" class="video"></video>
+    </div>
+
+    <script src="./JS_homemade/intro.js"></script>
+    <script src="./JS_homemade/navbar.js"></script>
 </body>
 </html>
