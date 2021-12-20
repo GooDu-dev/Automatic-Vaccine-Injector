@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
 nav{
     display: flex;
     flex-direction: row;
@@ -197,7 +199,7 @@ nav .link-page .link.active a::after, nav .link-page .link:hover a::after{
     }
     nav .link-page .link a{
         color: whitesmoke;
-        font-size: 6vw;
+        font-size: 5vw;
         text-decoration: none;
         position: relative;
     }
@@ -280,7 +282,7 @@ nav .link-page .link.active a::after, nav .link-page .link:hover a::after{
     }
     nav .link-page .link a{
         color: whitesmoke;
-        font-size: 6vw;
+        font-size: 5vw;
         text-decoration: none;
         position: relative;
     }

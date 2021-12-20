@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
 
 *{
     margin: 0;
@@ -7,7 +7,7 @@
 
 body{
     background-color: whitesmoke;
-    font-family: 'Itim', cursive;
+    font-family: 'Kanit', sans-serif;
 }
 
 .header-container{
@@ -37,11 +37,13 @@ body{
 }
 .header-container .text .header .english{
     font-size: 3.5vw;
-    font-family: 'Itim', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
 }
 .header-container .text .header .thai{
     font-size: 2.5vw;
-    font-family: 'Itim', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
 }
 .header-container .text .details{
     display: flex;
@@ -52,9 +54,12 @@ body{
 .header-container .text .details p{
     font-size: 2vw;
     font-weight: bolder;
-    font-family: 'Itim', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-weight: lighter;
     text-align: start;
     width: 90%;
+    border-left: 8px solid pink;
+    padding: 0 2.5%;
 }
 .header-container .text button{
     width: fit-content;
@@ -65,7 +70,7 @@ body{
     border-radius: 25px;
     align-self: flex-end;
     margin-right: 5vw;
-    font-family: 'Itim', cursive;
+    font-family: 'Kanit', sans-serif;
     transition: .5s;
     border: 1px solid black;
     border-bottom: 5px solid rgb(61, 60, 60);
@@ -111,11 +116,11 @@ body{
     }
     .header-container .text .header .english{
         font-size: 5vw;
-        font-family: 'Itim', cursive;
+        font-family: 'Kanit', sans-serif;
     }
     .header-container .text .header .thai{
         font-size: 4vw;
-        font-family: 'Itim', cursive;
+        font-family: 'Kanit', sans-serif;
     }
     .header-container .text .details{
         display: flex;
@@ -126,7 +131,7 @@ body{
     .header-container .text .details p{
         font-size: 3vw;
         font-weight: bold;
-        font-family: 'Itim', cursive;
+        font-family: 'Kanit', sans-serif;
         text-align: start;
         width: 90%;
     }
@@ -139,7 +144,7 @@ body{
         border-radius: 25px;
         align-self: center;
         margin-right: 5vw;
-        font-family: 'Itim', cursive;
+        font-family: 'Kanit', sans-serif;
         transition: .5s;
         border: 1px solid black;
         border-bottom: 5px solid rgb(61, 60, 60);
@@ -183,11 +188,11 @@ body{
     }
     .header-container .text .header .english{
         font-size: 7vw;
-        font-family: 'Itim', cursive;
+        font-family: 'Kanit', sans-serif;
     }
     .header-container .text .header .thai{
         font-size: 6vw;
-        font-family: 'Itim', cursive;
+        font-family: 'Kanit', sans-serif;
     }
     .header-container .text .details{
         display: flex;
@@ -198,7 +203,7 @@ body{
     .header-container .text .details p{
         font-size: 4vw;
         font-weight: bold;
-        font-family: 'Itim', cursive;
+        font-family: 'Kanit', sans-serif;
         text-align: start;
         width: 90%;
     }
@@ -211,7 +216,7 @@ body{
         border-radius: 25px;
         align-self: center;
         margin-right: 5vw;
-        font-family: 'Itim', cursive;
+        font-family: 'Kanit', sans-serif;
         transition: .5s;
         border: 1px solid black;
         border-bottom: 5px solid rgb(61, 60, 60);
@@ -256,11 +261,11 @@ body{
     }
     .header-container .text .header .english{
         font-size: 9vw;
-        font-family: 'Itim', cursive;
+        font-family: 'Kanit', sans-serif;
     }
     .header-container .text .header .thai{
         font-size: 7vw;
-        font-family: 'Itim', cursive;
+        font-family: 'Kanit', sans-serif;
     }
     .header-container .text .details{
         display: flex;
@@ -271,7 +276,7 @@ body{
     .header-container .text .details p{
         font-size: 5.5vw;
         font-weight: bold;
-        font-family: 'Itim', cursive;
+        font-family: 'Kanit', sans-serif;
         text-align: start;
         width: 95%;
     }
@@ -284,7 +289,7 @@ body{
         border-radius: 25px;
         align-self: center;
         margin-right: 5vw;
-        font-family: 'Itim', cursive;
+        font-family: 'Kanit', sans-serif;
         transition: .5s;
         border: 1px solid black;
         border-bottom: 5px solid rgb(61, 60, 60);

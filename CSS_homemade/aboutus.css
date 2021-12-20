@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
 
 *{
     margin: 0;
@@ -6,7 +6,7 @@
 }
 body{
     background-color: #353a40;
-    font-family: 'Itim', cursive;
+    font-family: 'Kanit', sans-serif;
 }
 
 .content{
@@ -38,6 +38,7 @@ body{
 .content .header .text h3{
     justify-self: end;
     align-self: flex-end;
+    font-weight: bolder;
 }
 .content .header .text h3:nth-child(1){
     font-size: 4vw;
@@ -53,6 +54,7 @@ body{
     align-self: flex-end;
     border-right: .5vw solid pink;
     padding-right: 1vw;
+    font-weight: lighter;
 }
 
 .card-container{

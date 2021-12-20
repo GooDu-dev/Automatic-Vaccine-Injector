@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
 
 *{
     margin: 0;
@@ -8,7 +8,7 @@ body{
     background-image: url('../Photos/stem04.jpg');
     background-repeat: no-repeat;
     background-size: cover;    
-    font-family: 'Itim', cursive;
+    font-family: 'Kanit', sans-serif;
 }
 
 .content{
@@ -101,6 +101,17 @@ body{
     .content .paragraph.col{
         flex-direction: column-reverse;
     }
+    .content .paragraph.col .image{
+        position: relative;
+    }
+    .content .paragraph.col .image::after{
+        content: 'Scroll for more';
+        position: absolute;
+        color: white;
+        right: 10%;
+        bottom: -5vw;
+        font-size: 3vw;
+    }
     .content .paragraph .text{
         width: 40%;
         background-color: wheat;
@@ -113,6 +124,8 @@ body{
     .content .paragraph.col .text{
         width: 80%;
         margin: 5vw 0;
+        height: 80vw;
+        overflow-y: scroll;
     }
     .content .paragraph .text h1{
         font-size: 6vw;
