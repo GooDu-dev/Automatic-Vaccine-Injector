@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS_homemade/navbar.css">
+    <link rel="stylesheet" href="./CSS_homemade/picture.css">
+    <title>Picture</title>
+</head>
+<body class="photoBg">
+    <!--Navbar-->
+    <img id="toggle" onclick="toggleNavbar()" src="./Photos/setting-hamburger-handamde.png" alt="" class="toggle">
+    <nav id="nav">
+        <img src="./Photos/stem04.png" alt="" class="logo">
+        <h1 class="page">--Pictures--</h1>
+        <ul class="link-page">
+            <li class="link"><a href="./intro.html">Welcome</a></li>
+            <li class="link"><a href="./Products.html">Innovation</a></li>
+            <li class="link active"><a href="./Picture.html">Pictures</a></li>
+            <li class="link"><a href="./Reserch.html">Researches</a></li>
+            <li class="link"><a href="./AboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div id="content" class="content">
+        <div class="paragraph right">
+            <div class="text">
+                <h1>First Automatic Vaccine Injection Machine Draft</h1>
+                <p>ต้นแบบของเครื่องได้แนวคิดมาจาก เครื่องวัดความดันในกระเเสเลือด โดยได้นำมาประยุกต์ให้เข้ากับปัญหาของการฉีดวัคซีน เช่น ปัญหาทางด้านบุคลากรที่ต้องใช้จำนวนที่เยอะในการฉีดวัคซีน 1 ครั้ง ปัญหาความล่าช้าในการฉีด เนื่องจากบุคลากรทางการเเพทย์ที่มีอยู่จำกัด ทำให้ไม่สามารถฉีดวัคซีนได้เยอะ เเละปัญหาการจัดเก็บข้อมูลของผู้ที่เข้ารับการฉีดวัคซีน โดยเครื่องจะใช้พลังงานไฟฟ้าเป็นหลักทำให้ง่ายต่อการติดตั้งและขนย้าย</p>
+            </div>
+            <div class="image">
+                <img class="img" src="./Photos/Model_Photos/Model_Plan1.jpg" alt="">
+                <img class="img" src="./Photos/Model_Photos/Model_Plan2.jpg" alt="">
+            </div>
+        </div>
+        <div class="paragraph col">
+            <div class="text">
+                <h1>Second Vaccine Automatic Injection Machine Draft</h1>
+                <p>จากปัญหาที่กล่าวมาข้างต้นทำให้พวกเราได้คิดเเละวิเคราะห์แนวทางการแก้ไขปัญหาของการฉีดวัคซีน ซึ่งทำให้เราได้โครงร่างของเครื่องฉีดวัคซีนอัตโนมัติในรูปของภาพ Perspective และ Top Front Side Back โดยมีหลักการทำงานดังนี้ ขั้นแรกผู้ที่จะเข้ารับการฉีดวัคซีนต้องไปซื้อขวดบรรจุวัคซีนตามที่แพทย์ได้ชี้แจง เเล้วจึงนำบัตรประชาชนไปเสียบที่เครื่องฉีดวัคซีนอัตโนมัติเเละจึงทำการใส่วัคซีนเข้าไปในเครื่อง(สำหรับเครื่องที่มีการบรรจุวัคซีนเตรียมไว้สำหรับกลุ่มผู้ที่ต้องการจะฉีด เช่น กลุ่มผู้ที่ต้องการจะฉีดวัคซีน COVID-19 ไม่จำเป็นต้องใส่ยาลงในเครื่อง เพราะจะมีขวดวัคซีนเตรียมไว้ในเครื่องเรียบร้อยเเล้ว) หลังจากที่เสียบบัตรประชาชนเข้าไปเเล้ว จะมีข้อมูลปรากฏบนหน้าจอ LCD เพื่อเป็นการยืนยันต่อผู้ที่ต้องการจะฉีดและบุคลการทางการแพทย์ที่ดูแลเครื่องอยู่ โดยข้อมูลนี้จะเชื่อมไปยัง Database ของโรงพยาบาลเพื่อทำการบันทึกข้อมูลว่าผู้ใช้รายนี้ได้ทำการฉีดวัคซีนในวันที่เท่าไร หลังจากนั้นในผู้ใช้ทำการสอดหัวไหล่เข้าไปในเครื่องเเละรอเครื่องทำงาน โดยที่เครื่องจะทำงานโดย ดันแผ่นผ้าไฟเบอร์ให้ชิดกับเเขนโดยมี weight sensor เป็นตัวกำหนดเมื่อได้ขนาดแขนเเล้วหุ่นยนต์จะนำไปคำนวณเพื่อให้ได้จุดที่ควรจะฉีดวัคซีน(บนกล้ามเนื้อ Deltoid) ซึ่งตัวเข็มฉีดยาไร้เข็มจะเลื่อนเข้าหาจุดที่ต้องฉีดยาผ่าน Stepper Motor ที่ต่อเข้ากับสายพานแบบแข็ง เเละตัวขวดวัคซีนจะเคลื่อนที่มาตามรางที่ผู้ใช้ได้ใส่ขวดวัคซีนไปในตอนต้น จนกระทั่งมาถึงตัวเข็มฉีดยาไร้เข็มเเละทำการบรรจุขวดวัคซีนเข้าเข็มฉีดยา เเล้วเข็มจะทำการเคลื่อนที่เข้าหารูที่จะฉีด โดยใช้ Servo Motor เเละรางที่เคื่อนผ่าน Stepper Motor เพื่อที่จะเตรียมตัวเคลื่อนที่ไปหาจุดที่จะฉีด แล้วจึงทำการฉีดขเาไปในกล้ามเนื้อ Middle Deltoid ได้อย่างแม่นยำ</p>
+            </div>
+            <div class="image">
+                <img class="img2" src="./Photos/Model_Photos/SeccondDraft.jpg" alt="">
+            </div>
+        </div>
+        <div class="paragraph col">
+            <div class="text">
+                <h1>Final Automatic Injection Machine Model</h1>
+                <p>และได้นำแบบโครงร่างที่ได้ออกแบบทั้งคู่นำมาปั้นเป็น Model 3D เพื่อที่จะได้เห็นภาพรวมของเครื่องได้อย่างชัดเจน เช่น ขาที่ยึดเครื่องกับโต๊ะเพื่อไม่ให้เครื่องนั้นขยับ ช่องที่ไว้ใส่วัคซีนเข้าไปในรางวัคซีนที่อยู่ในเครื่อง ช่องเสียบบัตรประชาชนที่เชื่อมต่อเข้ากับ Database ของโรงพยาบาล หน้าจอ LCD ที่ไว้แสดงข้อมูล และปุ่มหยุดการทำงานฉุกเฉินในกรณีที้่เครื่องนั้นเกิดปัญหา หรือเกิดข้อผิดผลาดในการใช้งาน   ทำให้เครื่องฉีดวัคซีนอัตโนมัตินี้สามารถช่วยเหลือบุคลากร<br>ทางการเเพทย์ในการฉีดวัคซีนได้ และได้นำแบบโครงร่างที่ได้ออกแบบทั้งคู่นำมาปั้นเป็น Model 3D เพื่อที่จะได้เห็นภาพรวมของเครื่องได้อย่างชัดเจน เช่น ขา (C clamp) ที่ยึดเครื่องกับโต๊ะเพื่อไม่ให้เครื่องนั้นขยับ ช่องที่ไว้ใส่วัคซีนเข้าไปในรางวัคซีนที่อยู่ในเครื่อง ช่องเสียบบัตรประชาชนที่เชื่อมต่อเข้ากับ Database ของโรงพยาบาล หน้าจอ LCD ที่ไว้แสดงข้อมูล และปุุ่มหยุดทำงานฉุกเฉินในกรณีที่เครื่องนั้นเกิดปัญหา หรือเกิดข้อผิดพลาดในการใช้การ ทำให้เครื่องฉีดวัคซีนอัตโนมัตินี้สามารถช่วยเหลือบุคลากรทางการเเพทย์ในการฉีดวัคซีนได้</p>
+            </div>
+            <div class="image">
+                <img class="img3" src="./Photos/Model_Photos/01.png" alt="">
+                <img class="img3" src="./Photos/Model_Photos/02.png" alt="">
+                <img class="img3" src="./Photos/Model_Photos/03.png" alt="">
+                <img class="img3" src="./Photos/Model_Photos/04.png" alt="">
+                <img class="img3" src="./Photos/Model_Photos/05.png" alt="">
+                <img class="img3" src="./Photos/Model_Photos/06.png" alt="">
+                <img class="img3" src="./Photos/Model_Photos/07.png" alt="">
+                <img class="img3" src="./Photos/Model_Photos/08.png" alt="">
+                <img class="img3" src="./Photos/Model_Photos/09.png" alt="">
+                <img class="img3" src="./Photos/Model_Photos/10.png" alt="">
+                <img class="img3" src="./Photos/Model_Photos/11.png" alt="">
+                <img class="img3" src="./Photos/Model_Photos/12.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./JS_homemade/picture.js"></script>
+    <script src="./JS_homemade/navbar.js"></script>
+</body>
+</html>

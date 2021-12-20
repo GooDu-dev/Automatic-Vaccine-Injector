@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: 'Kanit', sans-serif;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-container .video{
+    width: 40vw;
+    height: auto;
+}
+.header-container .text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 30vw;
+    justify-content: space-evenly;
+}
+.header-container .text .header{
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    justify-content: center;
+}
+.header-container .text .header .english{
+    font-size: 3.5vw;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+}
+.header-container .text .header .thai{
+    font-size: 2.5vw;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+}
+.header-container .text .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-container .text .details p{
+    font-size: 2vw;
+    font-weight: bolder;
+    font-family: 'Kanit', sans-serif;
+    font-weight: lighter;
+    text-align: start;
+    width: 90%;
+    border-left: 8px solid pink;
+    padding: 0 2.5%;
+}
+.header-container .text button{
+    width: fit-content;
+    padding: 1vw;
+    font-size: 2vw;
+    background-color: transparent;
+    border: none;
+    border-radius: 25px;
+    align-self: flex-end;
+    margin-right: 5vw;
+    font-family: 'Kanit', sans-serif;
+    transition: .5s;
+    border: 1px solid black;
+    border-bottom: 5px solid rgb(61, 60, 60);
+    box-shadow: 0px 10% 20px rgb(61, 60, 60);
+}
+.header-container .text button:hover{
+    background-color: rgb(90, 88, 88);
+    border-bottom: 5px solid rgb(136, 133, 133);
+    color: whitesmoke;
+}
+.header-container .text button a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (max-width: 928px){
+    
+    .header-container{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 95%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .header-container .video{
+        width: 55vw;
+        height: auto;
+    }
+    .header-container .text{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 45vw;
+        justify-content: space-evenly;
+    }
+    .header-container .text .header{
+        display: flex;
+        flex-direction: column;
+        justify-self: start;
+        justify-content: center;
+        width: 100%;
+    }
+    .header-container .text .header .english{
+        font-size: 5vw;
+        font-family: 'Kanit', sans-serif;
+    }
+    .header-container .text .header .thai{
+        font-size: 4vw;
+        font-family: 'Kanit', sans-serif;
+    }
+    .header-container .text .details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-container .text .details p{
+        font-size: 3vw;
+        font-weight: bold;
+        font-family: 'Kanit', sans-serif;
+        text-align: start;
+        width: 90%;
+    }
+    .header-container .text button{
+        width: fit-content;
+        padding: 1vw;
+        font-size: 3vw;
+        background-color: transparent;
+        border: none;
+        border-radius: 25px;
+        align-self: center;
+        margin-right: 5vw;
+        font-family: 'Kanit', sans-serif;
+        transition: .5s;
+        border: 1px solid black;
+        border-bottom: 5px solid rgb(61, 60, 60);
+        box-shadow: 0px 10% 20px rgb(61, 60, 60);
+    }
+    .header-container .text button:hover{
+        background-color: rgb(90, 88, 88);
+        border-bottom: 5px solid rgb(136, 133, 133);
+        color: whitesmoke;
+    }
+}
+
+@media only screen and (max-width: 628px){
+    
+    .header-container{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 95%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-container .video{
+        width: 90vw;
+        height: auto;
+        border-radius: 5%;
+    }
+    .header-container .text{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 60vw;
+        justify-content: space-evenly;
+    }
+    .header-container .text .header{
+        display: flex;
+        flex-direction: column;
+        justify-self: start;
+        justify-content: center;
+        width: 100%;
+    }
+    .header-container .text .header .english{
+        font-size: 7vw;
+        font-family: 'Kanit', sans-serif;
+    }
+    .header-container .text .header .thai{
+        font-size: 6vw;
+        font-family: 'Kanit', sans-serif;
+    }
+    .header-container .text .details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-container .text .details p{
+        font-size: 4vw;
+        font-weight: bold;
+        font-family: 'Kanit', sans-serif;
+        text-align: start;
+        width: 90%;
+    }
+    .header-container .text button{
+        width: fit-content;
+        padding: 1vw;
+        font-size: 4vw;
+        background-color: transparent;
+        border: none;
+        border-radius: 25px;
+        align-self: center;
+        margin-right: 5vw;
+        font-family: 'Kanit', sans-serif;
+        transition: .5s;
+        border: 1px solid black;
+        border-bottom: 5px solid rgb(61, 60, 60);
+        box-shadow: 0px 10% 20px rgb(61, 60, 60);
+    }
+    .header-container .text button:hover{
+        background-color: rgb(90, 88, 88);
+        border-bottom: 5px solid rgb(136, 133, 133);
+        color: whitesmoke;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    
+    
+    .header-container{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 95%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-container .video{
+        width: 70vw;
+        height: auto;
+        border-radius: 5%;
+    }
+    .header-container .text{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 50%;
+        justify-content: space-evenly;
+    }
+    .header-container .text .header{
+        display: flex;
+        flex-direction: column;
+        justify-self: start;
+        justify-content: center;
+        width: 100%;
+    }
+    .header-container .text .header .english{
+        font-size: 9vw;
+        font-family: 'Kanit', sans-serif;
+    }
+    .header-container .text .header .thai{
+        font-size: 7vw;
+        font-family: 'Kanit', sans-serif;
+    }
+    .header-container .text .details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-container .text .details p{
+        font-size: 5.5vw;
+        font-weight: bold;
+        font-family: 'Kanit', sans-serif;
+        text-align: start;
+        width: 95%;
+    }
+    .header-container .text button{
+        width: fit-content;
+        padding: 1vw;
+        font-size: 5.5vw;
+        background-color: transparent;
+        border: none;
+        border-radius: 25px;
+        align-self: center;
+        margin-right: 5vw;
+        font-family: 'Kanit', sans-serif;
+        transition: .5s;
+        border: 1px solid black;
+        border-bottom: 5px solid rgb(61, 60, 60);
+        box-shadow: 0px 10% 20px rgb(61, 60, 60);
+    }
+    .header-container .text button:hover{
+        background-color: rgb(90, 88, 88);
+        border-bottom: 5px solid rgb(136, 133, 133);
+        color: whitesmoke;
+    }
+}
